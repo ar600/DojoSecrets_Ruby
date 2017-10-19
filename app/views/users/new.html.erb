@@ -1,0 +1,16 @@
+<h1>Users#new</h1>
+<p>Find me in app/views/users/new.html.erb</p>
+
+
+<form class="reg" action="/users/create" method="post">
+  <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+  Email
+  <input type="email" name="user[email]">
+  Name:
+  <input type="text" name="user[name]">
+  Password:
+  <input type="password" name="user[password]" >
+  Conformation Password:
+  <input type="password" name="user[password_confirmation]">
+  <input type="submit" name="submit" value="Join">
+</form>
